@@ -1,0 +1,108 @@
+body {
+    margin: 50px;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: grid;
+    height: 100vh; /* viewport height */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.25fr repeat(4, 1fr);
+    grid-gap: 0.2rem;
+    grid-template-areas: 
+        "selected gallery gallery gallery"
+        "selected image1 image2 image3"
+        "selected image4 image5 image6"
+        /* "selected image7 image8 image9" */
+        "selected image4 image5 image6";
+}
+
+.photo {
+    display: grid;
+    place-items: center;
+    background-color: beige;
+    font-family: sans-serif;
+}
+
+.selected {
+    background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    color: #eee;
+}
+
+/* make this a marquee in the future? */
+
+.gallery {
+    background: linear-gradient(to left, #e66465, #9198e5 50%, #eee 100%, #e66465, #9198e5 75%);
+}
+
+.A, .B, .C {
+    background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    color: #eee;
+}
+
+.D, .E, .F {
+    background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    color: #eee;
+}
+
+.G, .H, .I {
+    background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    color: #eee;
+}
+
+#gallery {
+    background-color: aqua;
+    grid-area: gallery;
+    letter-spacing: 1.4px;
+}
+
+#selected {
+    background-color: aquamarine;
+    grid-area: selected;
+    display: grid;
+    place-items: center;
+}
+
+#image1 {
+    grid-area: image1;
+}
+
+#image2 {
+    grid-area: image2;
+}
+
+#image3 {
+    grid-area: image3;
+}
+
+#image4 {
+    grid-area: image4;
+}
+
+#image5 {
+    grid-area: image5;
+}
+
+#image6 {
+    grid-area: image6;
+}
+
+#image7 {
+    grid-area: image7;
+}
+
+#image8 {
+    grid-area: image8;
+}
+
+#image9 {
+    grid-area: image9;
+}
