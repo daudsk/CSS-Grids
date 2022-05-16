@@ -106,3 +106,19 @@ header {
 #image9 {
     grid-area: image9;
 }
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 2.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+        grid-template-areas:
+            "gallery"
+            "selected"
+            "image1"
+            "image2"
+            "image3"
+            "image4"
+            "image5"
+            "image6";
+    }
+}
